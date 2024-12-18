@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>     <!-- index file - main file -->
+
+    <head>
+
+        <title>XYZ Co.,Ltd</title>
+        <!-- title icon -->
+        <link href="https://upload.wikimedia.org/wikipedia/commons/3/33/Vanamo_Logo.png" rel="icon" type="image/png" sizes="32x32" />
+        
+        
+        <!-- bootstrap css1 js1-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <!-- font awsome css1 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!--custom css-->
+        <style type="text/css">
+
+            *{
+                box-sizing: border-box;     /* for input form */
+            }
+
+            body{
+                padding: 0;
+                margin: 0;               
+            }
+
+            .banners{
+                height: 100vh;
+                background: linear-gradient(
+                    10deg,
+                    steelblue 30%,
+                    skyblue 0% 100%
+                );
+
+                background-size: 5%;
+
+                transition: all 2s;
+            }
+
+            .banners:hover{
+                background-size: 5.5%;
+                background-position: center;
+            }
+
+            .cardhovers:hover{
+                box-shadow: -7px 5px 5px rgba(0,0,0,0.3);
+            }
+
+            .maps{
+                width: 100%;
+                /* height: 250px; */
+                height: 40vh;
+            }
+
+        </style>
+
+             
+
+
+    </head>
+
+    <body>
+
+
+        <!-- Start header section-->
+        <header>
+
+            <!-- start nav bar -->     <!--aid information-->
+            <nav class="navbar navbar-expend-md bg-dark navbar-dark">
+                <a href="#" class="navbar-brand mx-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/512px-LEGO_logo.svg.png" width="50" alt="sitelog" />
+                    <span class="ms-2">Company Co.,Ltd</span>
+                </a>
+ 
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><i class="navbar-toggler-icon"></i></button>   <!--toggler - when collapse, it works non collapse, 1 item 2 function-->
+
+                <div id="nav" class="navbar-collapse collapse justify-content-between">     <!--justify-content-between - to space child element -->
+
+                    <ul class="navbar-nav px-3">
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase fw-bold">Home</a></li>  <!--nav-link= disappear underline-->
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase fw-bold">Clients</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase fw-bold">About</a></li>
+                        <li class="nav-item dropdown">
+
+                            <a href="#" class="nav-link text-uppercase fw-bold dropdown-toggle" data-bs-toggle="dropdown">Software</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Android</a></li>
+                                <li><a href="#" class="dropdown-item">Linux App</a></li>
+                                <li><a href="#" class="dropdown-item">Windows App</a></li>
+                            </ul>
+
+                        </li>
+                        
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase fw-bold">Pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase fw-bold">Contact</a></li>
+                    </ul>
+
+                    <div class="px-3">   <!--px- padding on x axis-->
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-0 px-3">Sign-up</a>
+                    </div>
+
+                </div>
+
+                
+            </nav>
+            <!-- end nav bar -->
+
+
+
+            <!--font size- h1 to h6/ display-1 to 6-->
+
+            <!-- start banner -->         <!--ad-->
+            <div class="continer-fluid">    <!--container-fluid - full screen(with margin), -->
+                <div class="row justify-content-center align-items-center banners">  <!--row - row  inside container-fluid is hide the margin, banners - selectors name-->
+                    <div class="col-md-10 text-center">   <!--giving row need to position column-->
+                        <h1 class="display-2"><span class="text-primary text-uppercase">XYZ</span> <span class="text-capitalize text-white">Software Development Company</span></h1>
+                        <h2 class="fst-italic fw-light text-light">We help Human to digitalize their bussiness.</h2>
+                        <p class="text-secondary">Properly set process. Transparent cooperation. Predictabel delivery.</p>
+                        <a href="#loginmodal" class="btn btn-warning btn-lg rounded-0" data-bs-toggle="modal" >Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end banner -->
+
+        </header>
+        <!-- End header section-->
+
+
+
+
+        <!-- Start our client section -->
+        <section class="bg-white p-5">
+
+            <div class="container-fluid">
+
+                <!-- start title -->
+
+                <div class="col-md-12 text-center">
+
+                    <h2 class="text-warning display-4">Our Clients</h2>
+                    <p class="text-muted lead">Projects We Sussefully Developed. Our look is worth a thousand words.</p>  <!--lead - letter spacing-->
+
+                </div>
+
+                <!-- end title -->
+
+                <div class="row text-center">
+
+                    <div class="col-md-3 col-sm-6 mb-3">
+
+                        <div class="card bg-info cardhovers">
+
+                            <!-- <div class="card-header">a</div> -->
+
+                            <div class="card-body">
+                                <h5 class="card-title">Nissan</h5>
+                                <h6 class="card-subtitle mb-3">Vehicles</h6>
+                                <p >For Kids who wanna strong like a man</p>
+                                <a href="#" class="card-link">website</a>
+                                <a href="#" class="card-link">Contant</a>
+                            </div>
+
+                            <!-- <div class="card-footer">c</div> -->
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-sm-6  mb-3">
+
+                        <div class="card bg-info cardhovers">
+
+                            <!-- <div class="card-header">a</div> -->
+
+                            <div class="card-body">
+                                <h5 class="card-title">Nissan</h5>
+                                <h6 class="card-subtitle mb-3">Vehicles</h6>
+                                <p >For Kids who wanna strong like a man</p>
+                                <a href="#" class="card-link">website</a>
+                                <a href="#" class="card-link">Contant</a>
+                            </div>
+
+                            <!-- <div class="card-footer">c</div> -->
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-sm-6  mb-3">
+
+                        <div class="card bg-info cardhovers">
+
+                            <!-- <div class="card-header">a</div> -->
+
+                            <div class="card-body">
+                                <h5 class="card-title">Mazda</h5>
+                                <h6 class="card-subtitle mb-3">Vehicles</h6>
+                                <p >For Kids who wanna strong like a man</p>
+                                <a href="#" class="card-link">website</a>
+                                <a href="#" class="card-link">Contant</a>
+                            </div>
+
+                            <!-- <div class="card-footer">c</div> -->
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-sm-6  mb-3">
+
+                        <div class="card bg-info cardhovers">
+
+                            <!-- <div class="card-header">a</div> -->
+
+                            <div class="card-body">
+                                <h5 class="card-title">Mercedez</h5>
+                                <h6 class="card-subtitle mb-3">Vehicles</h6>
+                                <p >For Kids who wanna strong like a man</p>
+                                <a href="#" class="card-link">website</a>
+                                <a href="#" class="card-link">Contant</a>
+                            </div>
+
+                            <!-- <div class="card-footer">c</div> -->
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-sm-6  mb-3">
+
+                        <div class="card bg-warning cardhovers">
+
+                            <!-- <div class="card-header">a</div> -->
+
+                            <div class="card-body">
+                                <h5 class="card-title">Samsung</h5>
+                                <h6 class="card-subtitle mb-3">Communication Technology</h6>
+                                <p >For Kids who wanna strong like a man</p>
+                                <a href="#" class="card-link">website</a>
+                                <a href="#" class="card-link">Contant</a>
+                            </div>
+
+                            <!-- <div class="card-footer">c</div> -->
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-sm-6  mb-3">
+
+                        <div class="card bg-warning cardhovers">
+
+                            <!-- <div class="card-header">a</div> -->
+
+                            <div class="card-body">
+                                <h5 class="card-title">Mi</h5>
+                                <h6 class="card-subtitle mb-3">Communicaton Technology</h6>
+                                <p >For Kids who wanna strong like a man</p>
+                                <a href="#" class="card-link">website</a>
+                                <a href="#" class="card-link">Contant</a>
+                            </div>
+
+                            <!-- <div class="card-footer">c</div> -->
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-sm-6  mb-3">
+
+                        <div class="card bg-warning cardhovers">
+
+                            <!-- <div class="card-header">a</div> -->
+
+                            <div class="card-body">
+                                <h5 class="card-title">Apple</h5>
+                                <h6 class="card-subtitle mb-3">Communication Technology</h6>
+                                <p >For Kids who wanna strong like a man</p>
+                                <a href="#" class="card-link">website</a>
+                                <a href="#" class="card-link">Contant</a>
+                            </div>
+
+                            <!-- <div class="card-footer">c</div> -->
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-6  mb-3">
+
+                        <div class="card bg-warning cardhovers">
+
+                            <!-- <div class="card-header">a</div> -->
+
+                            <div class="card-body">
+                                <h5 class="card-title">Vivo</h5>
+                                <h6 class="card-subtitle mb-3">Communication Technology</h6>
+                                <p >For Kids who wanna strong like a man</p>
+                                <a href="#" class="card-link">website</a>
+                                <a href="#" class="card-link">Contant</a>
+                            </div>
+
+                            <!-- <div class="card-footer">c</div> -->
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- End our client section -->
+
+
+
+        
+        <!-- Start software section -->
+        <section>
+            <div class="container-fluid">
+
+                <!-- start title -->
+
+                <div class="col-md-12 text-center">
+                    <h2 class="text-warning display-4">Software</h2>
+                    <p class="text-muted lead">Project We Sussefully Developed. Our Look Is Worth A Thousand Words</p>
+                </div>
+                <!-- end title -->
+
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="https://project-disco.org/wp-content/uploads/2018/04/Android-logo.jpg"  class="img-thumbnail" alt="android"/>
+                        <h3 class="text-warning my-3">Android Application</h3>
+                        <p>Our Look Is Worth A Thousand Words.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="https://www.wowinfotech.com/src/img/hiredeveloper/iOS/ios-logo.png" class="img-thumbnail" alt="ios"/>
+                        <h3 class="text-warning my-3">IOS Application</h3>
+                        <p>Our Look Is Worth A Thousand Words.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrTB1yQ99DPc8Y3Y7PvGJPyi8Hjc6agnmOrA&s"  class="" alt="linux" width="320px" height="180px"/>
+                        <h3 class="text-warning my-3">Linux Application</h3>
+                        <p>Our Look Is Worth A Thousand Words.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="https://t2.tudocdn.net/707154?w=1200&h=1200"  class="" alt="windows" width="320px" height="180px"/>
+                        <h3 class="text-warning my-3">Windows Application</h3>
+                        <p>Our Look Is Worth A Thousand Words.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End software section -->
+
+
+
+
+        <!-- Start team section -->
+        <section class="bg-secondary p-5">
+            <div class="container-fluid">
+                
+                <!-- start title -->
+                <div class="col-md-12 text-center">
+                    <h2 class="text-warning display-4">Team</h2>
+                </div>
+                <!-- end title -->
+
+                <div class="row">
+                    <div class="col-lg-4 col-sm-10 mx-auto mb-3">
+                        <div class="card">
+                            <img src="https://i.pinimg.com/originals/da/24/e6/da24e61e38cf8b2db08b6d4b6895c11b.png" class="img-thumbnail" alt="user1"/>
+                            <div class="card-body">
+                                <h3 class="card-title">Khant Thu Aung</h3>
+                                <p class="card-subtitle lead">Founder</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="float-end">
+                                    <a href="#" target="_blank"><i class="fab fa-facebook text-primary fa-2x"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-twitter text-info fa-2x"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-youtube text-danger fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-10 mx-auto mb-3">
+                        <div class="card">
+                            <img src="https://i.pinimg.com/736x/4a/4a/3f/4a4a3f5adf7f073009c9fc9b1cb53e95.jpg" class="img-thumbnail" alt="user2"/>
+                            <div class="card-body">
+                                <h3 class="card-title">Amthree</h3>
+                                <p class="card-subtitle lead">CEO</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="float-end">
+                                    <a href="#" target="_blank"><i class="fab fa-facebook text-primary fa-2x"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-twitter text-info fa-2x"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-youtube text-danger fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-10 mx-auto mb-3">
+                        <div class="card">
+                            <img src="https://i.pinimg.com/originals/da/24/e6/da24e61e38cf8b2db08b6d4b6895c11b.png" class="img-thumbnail" alt="user2"/>
+                            <div class="card-body">
+                                <h3 class="card-title">Mthree</h3>
+                                <p class="card-subtitle lead">MD</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="float-end">
+                                    <a href="#" target="_blank"><i class="fab fa-facebook text-primary fa-2x"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-twitter text-info fa-2x"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-youtube text-danger fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End team section -->
+
+
+
+
+
+        <!-- Start Public interest section -->
+        <section class="p-5">
+            
+            <div class="container-fluid">
+                <!-- start title -->
+                <div class="col-md-12 text-center">
+                    <h2 class="text-warning display-4">Public Interest</h2>
+                    <p class="text-muted lead">Project We Sussefully Developed. Our Look Is Worth A Thousand Words</p>
+                </div>
+                <!-- end title -->
+
+                <div class="row">
+                    <div class="col-lg-6 col-sm-10 mx-auto">
+                        <h3>Ebook</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar progress-bar-striped bg-warning" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+
+                        <h3>Android Application</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar progress-bar-striped bg-info" style="width: 12%;" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">12%</div>
+                        </div>
+
+                        <h3>IOS Application</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar progress-bar-striped bg-black" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                        </div>
+
+                        <h3>Linux Application</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar progress-bar-striped bg-success" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+
+                        <h3>Windows Application</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar progress-bar-striped bg-danger" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- End Public interest section -->
+
+
+
+
+
+        <!-- Start pricing section -->
+        <section class="bg-secondary p-5">
+            <div class="container-fluid">
+            
+                <!-- start title -->
+                <div class="col-md-12 text-center">
+                    <h2 class="text-warning display-4">Pricing</h2>
+                    <p class="text-light lead">Project We Sussefully Developed. Our Look Is Worth A Thousand Words</p>
+                </div>
+                <!-- end title -->
+
+                <div class="row text-center">
+                    
+                    <div class="col-md-4 col-sm-10 mx-auto mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5>BLOG SITE/ FREE</h5>
+                                <h6>$0/month</h6>
+                                <hr/>
+
+                                <ul class="list-group">
+                                    <li class="list-group-item">Single User</li>
+                                    <li class="list-group-item">5gb Storage</li>
+                                    <li class="list-group-item">Unlimtited Public Projects</li>
+                                    <li class="list-group-item">Community Access</li>
+                                    <li class="list-group-item">Deticate Phone Support</li>
+                                    <li class="list-group-item">Free Subdomain</li>
+                                    <li class="list-group-item">Monthly Status Report</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="d-grid">      <!--d-grid - full button-->
+                                    <a class="btn btn-warning text-uppercase">Checkout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-10 mx-auto mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5>ECOMMERCE SITE/ PLUS</h5>
+                                <h6>$9/month</h6>
+                                <hr/>
+
+                                <ul class="list-group">
+                                    <li class="list-group-item">Single User</li>
+                                    <li class="list-group-item">5gb Storage</li>
+                                    <li class="list-group-item">Unlimtited Public Projects</li>
+                                    <li class="list-group-item">Community Access</li>
+                                    <li class="list-group-item">Deticate Phone Support</li>
+                                    <li class="list-group-item">Free Subdomain</li>
+                                    <li class="list-group-item">Monthly Status Report</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="d-grid">      <!--d-grid - full button-->
+                                    <a class="btn btn-warning text-uppercase">Checkout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-10 mx-auto mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5>DYNAMICE SITE/ PRO</h5>
+                                <h6>$49/month</h6>
+                                <hr/>
+
+                                <ul class="list-group">
+                                    <li class="list-group-item">Single User</li>
+                                    <li class="list-group-item">5gb Storage</li>
+                                    <li class="list-group-item">Unlimtited Public Projects</li>
+                                    <li class="list-group-item">Community Access</li>
+                                    <li class="list-group-item">Deticate Phone Support</li>
+                                    <li class="list-group-item">Free Subdomain</li>
+                                    <li class="list-group-item">Monthly Status Report</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="d-grid">      <!--d-grid - full button-->
+                                    <a class="btn btn-warning text-uppercase">Checkout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </section>
+        <!-- End pricing section -->
+
+
+
+
+
+
+
+        <!-- Start contact section -->
+        <section class="p-5">
+            <div class="container-fluid">
+
+                <!-- start title -->
+                <div class="col-md-12 text-center">
+                    <h2 class="text-warning display-4">Contact</h2>
+                </div>
+                <!-- end title -->
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-sm-10 mx-auto mb-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Office Location</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d611.8263689904334!2d96.1302355457253!3d16.82561966119689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c194ca12fe260b%3A0x5ec3dae9d33b5892!2sM-Tower!5e1!3m2!1sen!2smm!4v1726401607349!5m2!1sen!2smm" class="maps" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <div class="card-footer">
+                                <p>Phone: 09112345678</p>
+                                <p>Email: mthree@gmail.com</p>
+                                <p>Address: Hleden, Kamayut, Yangon</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6 col-md-8 col-sm-10 mx-auto mb-3">
+                        <div class="text-secondary text-center">
+                            <h3>Got Question?</h3>
+                            <p>Staty connected</p>
+                        </div>
+
+                       
+                        <form action="" method="">
+                            <div class="col-md-12 form-group mb-3">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" class="form-control form-control-sm rounded-0" placeholder="Enter Your Name"/>
+                            </div>
+
+                            <div class="col-md-12 form-group mb-3">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" class="form-control form-control-sm rounded-0" placeholder="Enter Your Email"/>
+                            </div>
+
+                            <div class="col-md-12 form-group mb-3">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" class="form-control form-control-sm rounded-0" placeholder="Enter Your Message" rows="3"></textarea>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-success rounded-0">Submit</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!--End contact section-->
+
+
+
+
+
+        <!-- Start footer section -->
+        <section class="bg-success py-3">
+            <div class="container-fluid">
+                <div class="col-12 text-center text-light">
+                    <p>©Copyrights <span id="autoyear"></span> - Developed by someone</p>    <!--charref - to find character-->
+                </div>
+            </div>
+
+            <!-- elfsight viber chat -->
+            <div class="elfsight-app-fd62f44d-e9b7-42f2-b3b4-655607ed9994" data-elfsight-app-lazy></div>
+        </section>
+        <!-- End footer section -->
+
+
+
+
+        <!-- START MODAL SECTION -->
+
+            <!-- Modal size 
+            (i) standard size
+                xl
+                lg
+                md (default)
+                sm
+            (ii) full size 
+                fullscreen
+                fullscreen-sm-down 
+                fullscreen-md-down 
+            -->
+                 
+
+            <!-- Start Get In Touch Modal -->
+            <div id="loginmodal" class="modal">
+                
+                <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">     <!--modal-dialog - standard size for modal box-->
+                    
+                    <div class="modal-content">          <!--modal-content - modal box with background-->
+                        <div class="modal-header">
+                            <h5 class="modal-title">Log In Here</h5>
+                            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+        
+                        <div class="modal-body">
+                            <div class="col-md-12">
+                                <form action="" method="">
+                                    <div class="form-group mb-4">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" class="form-control form-control-sm rounded-0" placeholder="Enter Your Email"/>
+                                    </div>
+        
+                                    <div class="form-group mb-4">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" name="password" class="form-control form-control-sm rounded-0" placeholder="Enter Your Password"/>
+                                    </div>
+        
+                                    <div class="d-flex justify-content-end">
+                                        <button type="reset" class="btn btn-secondary btn-sm">Cancel</button>
+                                        <button type="submit" class="btn btn-primary btn-sm ms-3">Log In</button>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <p class="">Not Register Yet? <a href="#">Sign up here</a> </p>
+                        </div>
+        
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- End Get In Touch Modal -->
+
+        <!-- END MODAL SECTION -->
+
+
+
+
+       
+        <!-- bootstrap css1 js1-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- jquery js1 -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <!-- elfsight viber chat -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+
+        <script type="text/javascript">
+
+            const autoyear = document.getElementById('autoyear');
+            const getyear  = new Date().getUTCFullYear();
+
+            autoyear.textContent = getyear;
+
+            //$(document).ready(function(){
+
+            //   console.log('hi');
+
+            //});
+
+
+        </script>
+        
+       
+
+
+    </body>
+    
+</html>
